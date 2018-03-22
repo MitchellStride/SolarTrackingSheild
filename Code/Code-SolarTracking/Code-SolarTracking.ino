@@ -29,46 +29,65 @@ void loop() {
   int front = LDR3 - LDR4;
   int right = LDR1 - LDR3;
   int back = LDR2 - LDR4;
+      
+      if(abs(left)<100 && abs(right)<100){
+        delay(10);
+      }
+        else{
+          if(left>0){
+            zpos--;
+            zservo.write(zpos);
+            delay(50);
+          }
 
-  if(abs(right)<100 && abs(front)<100){
-    delay(10);
-    }
-
-    else{
-    //if(left>0){
-     // zpos+=1;
-     // zservo.write(zpos);
-     // delay(10);
-      //}
-
-    //if(left<0){
-      //zpos-=1;
-      //zservo.write(zpos);
-      //delay(10);
-     // }
+          if(left<0){
+            zpos++;
+            zservo.write(zpos);
+            delay(50);
+          }
   
-    if(right>0){
-      zpos++;
-      zservo.write(zpos);
-      delay(50);
+         if(right>0){
+            zpos++;
+            zservo.write(zpos);
+            delay(50);
+          }
+
+         if(right<0){
+            zpos--;
+            zservo.write(zpos);
+            delay(50);
+          }
+        }
+        
+     if(abs(front)<100 && abs(back)<100){
+       delay(10);
       }
 
-    if(right<0){
-      zpos--;
-      zservo.write(zpos);
-      delay(50);
-      }
+      else{
+        
+        if(front>0){
+            tiltpos--;
+            tiltservo.write(tiltpos);
+            delay(50);
+          }
 
-    if(front>0){
-      tiltpos--;
-      tiltservo.write(tiltpos);
-      delay(50);
-      }
+        if(front<0){
+            tiltpos++;
+            tiltservo.write(tiltpos);
+            delay(50);
+          }
+        
+        
+        if(back>0){
+            tiltpos++;
+            tiltservo.write(tiltpos);
+            delay(50);
+          }
 
-     if(front<0){
-      tiltpos++;
-      tiltservo.write(tiltpos);
-      delay(50);
+        if(back<0){
+            tiltpos--;
+            tiltservo.write(tiltpos);
+            delay(50);
+          }
       }
-   }
 }

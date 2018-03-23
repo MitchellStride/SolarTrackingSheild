@@ -1,8 +1,8 @@
-#MayoStride Innovations
+# MayoStride Innovations
 
 Project by Mitchell Stride, and Jordan Mayo.
 
-##Solar Tracking Control Module
+## Solar Tracking Control Module
 
 <img src="{{ "/pics/pcb-stage.png?raw=true" | prepend: site.baseurl }}" />
 
@@ -10,11 +10,11 @@ Project by Mitchell Stride, and Jordan Mayo.
 
 <img src="{{ "/pics/logo-trans.png?raw=true" | prepend: site.baseurl }}" />
 
-##Product Specifications
+## Product Specifications
 
 <img src="{{ "/pics/prod-spec.png?raw=true" | prepend: site.baseurl }}" />
 
-##Images
+## Images
 
 <img src="{{ "/pics/logo-product.png?raw=true" | prepend: site.baseurl }}" />
 

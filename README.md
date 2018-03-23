@@ -1,2 +1,3 @@
-# SolarTrackingShield
-ENGI 5800 Junior Design Project. An open source Arduino UNO R3 shield with room for a solar panel powered payload.
+#MayoStride Innovations
+##Solar Tracking Control Module
+<img src="{{ "/pics/pcb-stage.png?raw=true" | prepend: site.baseurl }}" />
